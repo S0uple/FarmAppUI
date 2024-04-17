@@ -1,0 +1,18 @@
+<h2 mat-dialog-title>Add Animal</h2>
+<mat-dialog-content>
+  <mat-form-field>
+    <mat-label>Name</mat-label>
+    <input matInput [formControl]="nameControl" />
+    <mat-error *ngIf="nameControl.invalid">{{
+      getNameErrorMessage()
+    }}</mat-error>
+  </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions class="actions">
+  <button mat-raised-button [disabled]="loading()" (click)="cancel()">
+    Cancel
+  </button>
+  <button mat-raised-button [disabled]="loading()" (click)="save()">
+    Save
+  </button>
+</mat-dialog-actions>

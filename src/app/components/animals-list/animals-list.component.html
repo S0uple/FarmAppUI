@@ -1,0 +1,21 @@
+<div class="header">
+  <h3 class="header-text">Animals List</h3>
+  <button mat-raised-button [disabled]="loading()" (click)="openAddModal()">
+    Add
+  </button>
+</div>
+
+<mat-list role="list">
+  <mat-list-item *ngFor="let animal of animals()" role="listitem">
+    {{ animal.name }}
+    <div matListItemMeta>
+      <button
+        mat-icon-button
+        [disabled]="loading()"
+        (click)="openDeleteModal(animal)"
+      >
+        <mat-icon>delete</mat-icon>
+      </button>
+    </div>
+  </mat-list-item>
+</mat-list>

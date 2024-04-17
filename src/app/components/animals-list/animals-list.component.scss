@@ -1,0 +1,14 @@
+:host {
+  flex: 1;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    .header-text {
+      font-weight: bold;
+      margin: 0;
+    }
+  }
+}

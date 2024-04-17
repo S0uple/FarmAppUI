@@ -1,0 +1,16 @@
+:host {
+  display: flex;
+  text-align: center;
+  height: 50px;
+
+  .header-text {
+    padding-top: 5px;
+    flex: 1;
+    font-size: 2em;
+    font-weight: bold;
+  }
+
+  .header-icon {
+    margin-right: 5px;
+  }
+}

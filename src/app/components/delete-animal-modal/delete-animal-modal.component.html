@@ -1,0 +1,12 @@
+<h2 mat-dialog-title>Delete Animal</h2>
+<mat-dialog-content>
+  Are you sure you want to delete {{ animal.name }}?
+</mat-dialog-content>
+<mat-dialog-actions class="actions">
+  <button mat-raised-button [disabled]="loading()" (click)="cancel()">
+    Cancel
+  </button>
+  <button mat-raised-button [disabled]="loading()" (click)="delete()">
+    Delete
+  </button>
+</mat-dialog-actions>
